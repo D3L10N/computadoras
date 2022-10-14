@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 375px;
+    height: 200px;
+}
+
+section{
+    color: rgba(248, 250, 251, 0.961);
+}
+
+section p{
+    color: cornsilk;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+.fechas{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+ background: linear-gradient(to right,#040104, #4e083de8);
+ color: white;    
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1950px;
+    margin: 0 auto;
+
+}
+
+/*hover para colorear el boton*/
+
+header{
+    background-color: rgb(58, 56, 56);
+    color: aqua;
+    padding: 15px;
+    display: block;
+    position: relative; 
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.Computadoras{
+    float: right;
+    font-size: 25px;
+   /* left: 0;
+    position: absolute;
+    clip-path: circle(0px at top left);
+    transition: clip-path ease-in-out 760ms;*/
+}
+
+.menu{
+    float: right;
+    left: 0;
+    position:fixed;
+    clip-path: circle(0px at top left);
+    transition: clip-path ease-in-out 960ms;
+    background: rgb(41, 1, 50);
+}
+
+.site-nav-open{
+    clip-path:circle(200% at top left);
+    padding: auto;
+}
+
+.menu li{
+    border-bottom: 1px solid white;
+    list-style-type: none;
+}
+
+.menu li:last-child{
+    border-bottom: none;
+}
+
+.menu a{
+    color: white;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.menu a:hover, .menu a:focus{
+    background-color: rgb(139, 250, 144);
+    color: black;
+}
+
+.menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+.menu-open .hamburguer{
+    transform: rotate(45deg);
+}
+
+.menu-open .hamburguer::before{
+    opacity: 0;
+}
+
+.menu-open .hamburguer::before{
+    transform: translateY(-3px) rotate(-90deg);
+}
+
+
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after{
+    content: '';
+    display: block;
+    background-color: aliceblue;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 50ms;
+}
+
+.hamburguer::before{
+    transform: translateY(-6px);
+}
+
+.hamburguer::after{
+    transform: translateY(3px);
+}
+
+
+@media (min-width: 700px){
+    .menu-toggle{
+        display: none;
+    }
+    .menu{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: left;
+        margin-right: 10px;
+        clip-path: initial;
+    }
+    .menu li{
+        display: inline-block;
+        border: none;
+    }
+    .menu a{
+        padding: 0;
+        margin-left: 20px;
+    }
+    .site-nav--icon{
+        display: none;
+    }
+    .menu a:hover
+    .menu a:focus{
+        background: transparent;
+    }
+}
+
+
+#home{
+    max-width: 1500px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.fila{
+    display: flex;
+}
+
+.fila .col{
+    width: 50%;
+    position: relative;
+}
+
+h2{
+    font-size: 60px;
+    line-height: 80px;
+}
+.normal{
+    font-weight: normal;
+}
+.col p{
+    max-width: 350px;
+    margin: 30px 0;
+}
+/*   ESto es de la imagen para que gire
+.mause{
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    animation: 10s girar infinite alternate linear;
+    size: 0ch;
+}
+*/
+.col .compu{
+    position: absolute;
+    top: 160px;
+    right: 400px;
+    width: 300px;
+    height: 300px;
+    animation: 5s transparencia infinite alternate linear;
+}
+.figuraOferta{
+    top: 160px;
+    right: 400px;
+    width: 300px;
+    height: 300px;
+    animation: 5s transparencia infinite alternate linear;
+}
+
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.figura2{
+    position:absolute;
+    top: 70px;
+    right: 0;
+    animation: 4s transparencia infinite alternate linear;
+}
+
+ .figuraGaleria3{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+  .figuraGaleria4{
+    top: 70px;
+    right: 0;
+    animation: 4s transparencia infinite alternate linear;
+}
+
+.figuraGaleria5{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+ .figuraGaleria6{
+    top: 70px;
+    right: 0;
+    animation: 2s transparencia infinite alternate linear;
+}
+  .figuraGaleria7{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+
+.figuraGaleria8{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+ .figuraGaleria9{
+    top: 70px;
+    right: 0;
+    animation: 4s transparencia infinite alternate linear;
+}
+  .figuraGaleria10{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+.figuraGaleria2
+{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+}
+.galeria{
+    background: linear-gradient(to right,#040104, #4e083de8);
+    padding: 40%;
+
+}
+
+.creador1{
+    top: 70px;
+    right: 0;
+    animation: 2s transparencia infinite alternate linear;
+    margin: 20px;
+}
+.creador2
+{
+    top: 70px;
+    right: 0;
+    animation: 4s transparencia infinite alternate linear;
+    margin: 20px;
+}
+.creador3{
+    top: 70px;
+    right: 0;
+    animation: 3s transparencia infinite alternate linear;
+    margin: 20px;
+}
+.Desarrolladore{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.Formulario{
+    background: linear-gradient(to right,#131112e8, #2d3d51e8);
+    margin-bottom: 40px;
+}
+
+@keyframes transparencia {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .1;
+    }
+}
+.home{
+    padding: 30px;
+    background: url(MoradoGamer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*__________________________________________________________*/
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 0 100px;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 70px;
+    font-weight: 600; 
+    color: white; 
+    padding-top: 60px;
+}
+
+.Historia{
+    padding: 30px;
+    background: url(img/ejemplo\ o\ ejercicio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: justify;
+}
+
+.promociones{
+    padding: 30px;
+    background: url(fonoAzul1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
